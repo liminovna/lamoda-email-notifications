@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 import smtplib
 From lamoda_info import urls, HEADERS, SENDER, ADDRESSEE, PASSWORD
 
-# get links along with the threshold from txt file
-
 
 def get_title(link):
     page = requests.get(link, headers=HEADERS)
